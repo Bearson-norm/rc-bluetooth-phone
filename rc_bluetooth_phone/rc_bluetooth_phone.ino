@@ -42,10 +42,8 @@ void loop() {
     } else {
       stopMotors();
     }
-  } else if (millis() - lastReceivedTime >= timeout) {
+  } else() {
     stopMotors();
-    Serial.println("Stop");
-
   }
 
   if (Serial.available()) {
